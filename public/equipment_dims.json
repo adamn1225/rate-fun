@@ -1711,7 +1711,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER35",
+        "Model": "Challenger 35",
         "dimensions": {
             "Length": 9.25,
             "Width": 7.67,
@@ -1721,7 +1721,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER45",
+        "Model": "Challenger 45",
         "dimensions": {
             "Length": 14.75,
             "Width": 9.25,
@@ -1731,7 +1731,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER55",
+        "Model": "Challenger 55",
         "dimensions": {
             "Length": 17.5,
             "Width": 9.25,
@@ -1741,7 +1741,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER65",
+        "Model": "Challenger 65",
         "dimensions": {
             "Length": 19.5,
             "Width": 9.58,
@@ -1751,7 +1751,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER657YC",
+        "Model": "Challenger 657YC",
         "dimensions": {
             "Length": 18.58,
             "Width": 9.42,
@@ -1761,7 +1761,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER65C2ZJ",
+        "Model": "Challenger 65C2ZJ",
         "dimensions": {
             "Length": 19.92,
             "Width": 9.58,
@@ -1771,7 +1771,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER65D2ZJ",
+        "Model": "Challenger 65D2ZJ",
         "dimensions": {
             "Length": 19.33,
             "Width": 10.0,
@@ -1781,7 +1781,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER65E",
+        "Model": "Challenger 65E",
         "dimensions": {
             "Length": 19.5,
             "Width": 9.58,
@@ -1791,7 +1791,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER70C2YL",
+        "Model": "Challenger 70C2YL",
         "dimensions": {
             "Length": 19.33,
             "Width": 10.0,
@@ -1801,7 +1801,7 @@
     },
     {
         "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER75C4KK",
+        "Model": "Challenger 75C4KK",
         "dimensions": {
             "Length": 19.33,
             "Width": 10.0,
@@ -1810,8 +1810,8 @@
         }
     },
     {
-        "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER75E",
+        "Manufacturer": "Challenger",
+        "Model": "Challenger 75E",
         "dimensions": {
             "Length": 19.5,
             "Width": 9.58,
@@ -1820,8 +1820,8 @@
         }
     },
     {
-        "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER85C9TK",
+        "Manufacturer": "Challenger",
+        "Model": "85C9TK",
         "dimensions": {
             "Length": 19.33,
             "Width": 10.0,
@@ -1830,8 +1830,8 @@
         }
     },
     {
-        "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER85E",
+        "Manufacturer": "Challenger",
+        "Model": "85E",
         "dimensions": {
             "Length": 19.5,
             "Width": 9.58,
@@ -1840,8 +1840,8 @@
         }
     },
     {
-        "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGER95E",
+        "Manufacturer": "Challenger",
+        "Model": "95E",
         "dimensions": {
             "Length": 19.5,
             "Width": 9.58,
@@ -1850,8 +1850,8 @@
         }
     },
     {
-        "Manufacturer": "Caterpillar",
-        "Model": "CHALLENGERCH75C",
+        "Manufacturer": "Challenger",
+        "Model": "CH75C",
         "dimensions": {
             "Length": 19.33,
             "Width": 10.0,
@@ -1865,7 +1865,7 @@
         "dimensions": {
             "Length": 22.42,
             "Width": 11.75,
-            "Height": 11.5,
+            "Height": 11.50,
             "Weight": 42200
         }
     },

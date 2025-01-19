@@ -1,0 +1,73 @@
+{
+    "arkansas": [
+        {
+            "width_min": 12,
+            "width_max": 14,
+            "escort_requirement": "1 front pilot car"
+        },
+        {
+            "width_min": 14,
+            "escort_requirement": "2 pilot cars (front & rear)"
+        },
+        {
+            "height_min": 15,
+            "escort_requirement": "1 front pilot car with height pole"
+        },
+        {
+            "height_min": 17,
+            "escort_requirement": "Special approval required"
+        }
+    ],
+    "alabama": [
+        {
+            "height_min": 15.5,
+            "escort_requirement": "1 pilot car in front with height pole"
+        },
+        {
+            "rear_overhang_min": 5,
+            "escort_requirement": "1 rear pilot car"
+        },
+        {
+            "front_overhang_min": 10,
+            "escort_requirement": "1 front pilot car"
+        }
+    ],
+    "delaware": [
+        {
+            "width_min": 12,
+            "width_max": 14,
+            "escort_requirement": "1 pilot car"
+        },
+        {
+            "width_min": 14,
+            "escort_requirement": "2 pilot cars"
+        },
+        {
+            "height_min": 15,
+            "escort_requirement": "1 front pilot car"
+        },
+        {
+            "height_min": 17.5,
+            "escort_requirement": "Special approval required"
+        }
+    ],
+    "texas": [
+        {
+            "width_min": 14,
+            "width_max": 16,
+            "escort_requirement": "1 pilot car"
+        },
+        {
+            "width_min": 16,
+            "escort_requirement": "2 pilot cars (front & rear)"
+        },
+        {
+            "height_min": 17,
+            "escort_requirement": "1 pilot car with height pole"
+        },
+        {
+            "height_min": 18,
+            "escort_requirement": "2 pilot cars (front & rear with height pole)"
+        }
+    ]
+}

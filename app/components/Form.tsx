@@ -1,7 +1,32 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import equipmentDims from '../../public/equipment_dims.json'; // Import the JSON data
+import structuredEscortRequirements from '../../public/structured_escort_requirements.json';
+import statePermitData from '../../public/state_permit_data.json';
 import FormFields from './FormFields'; // Import the FormFields component
+
+interface EscortRequirement {
+    width_min?: number;
+    width_max?: number;
+    height_min?: number;
+    escort_requirement: string;
+}
+
+interface StructuredEscortRequirements {
+    [key: string]: EscortRequirement[];
+}
+
+type StatePermitData = {
+    [key: string]: {
+        Width: string;
+        Height: string;
+        "Single Axle": string;
+        "Tandem Axle": string;
+        "Gross Vehicle Weight": string;
+    };
+};
+
+type StatePermitDataKeys = keyof typeof statePermitData;
 
 const Form = () => {
     const [year, setYear] = useState('');
@@ -44,6 +69,32 @@ const Form = () => {
             setWeight(0);
         }
     }, [make, model]);
+
+    const checkPermitRequirements = (state: string) => {
+        const stateKey = `${state} Size and Weight Limits` as keyof typeof statePermitData;
+
+        if (!(stateKey in statePermitData)) {
+            console.error(`State key "${stateKey}" not found in permit data.`);
+            return false;
+        }
+
+        const stateData = statePermitData[stateKey];
+        const overWidth = width > parseFloat(stateData.Width.replace(/[^0-9.]/g, '')) * 12;
+        const overHeight = height > parseFloat(stateData.Height.replace(/[^0-9.]/g, ''));
+        const overWeight = weight > parseFloat(stateData["Gross Vehicle Weight"].replace(/[^0-9.]/g, ''));
+
+        return overWidth || overHeight || overWeight;
+    };
+
+    const checkEscortRequirements = (state: string) => {
+        const requirements = (structuredEscortRequirements as StructuredEscortRequirements)[state.toLowerCase()] || [];
+        return requirements.filter(rule => {
+            return (
+                (rule.width_min && width >= rule.width_min && (!rule.width_max || width <= rule.width_max)) ||
+                (rule.height_min && height >= rule.height_min)
+            );
+        });
+    };
 
     useEffect(() => {
         console.log(`Origin Lat: ${originLat}, Origin Lon: ${originLon}`);
@@ -108,30 +159,87 @@ const Form = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        // Calculate distance
         const distance = haversineDistance(originLat, originLon, destinationLat, destinationLon);
         setDistance(distance);
-        console.log(`Distance between origin and destination: ${distance.toFixed(2)} miles`);
 
-        const fullRate = 3;
-        const partialLoad = 1.75;
-        let rate = 3;
+        const originPermitRequired = checkPermitRequirements(originState);
+        const destinationPermitRequired = checkPermitRequirements(destinationState);
 
-        const overwidth = width > 96;
-        if (height > 10.5 || weight >= 35000 || length >= 40) {
-            rate = fullRate;
-        } else if (length >= 15 && length < 30 && weight < 20000) {
-            rate = partialLoad;
-        } else if (overwidth) {
-            rate = 1 + fullRate;
+        const originEscorts = checkEscortRequirements(originState);
+        const destinationEscorts = checkEscortRequirements(destinationState);
+
+        const totalEscortCost = originEscorts.length * 500 + destinationEscorts.length * 500; // Example cost logic
+        const totalPermitCost = (originPermitRequired ? 125 : 0) + (destinationPermitRequired ? 125 : 0);
+
+        // Default rates and conditions
+        const fullLoadRate = 3;
+        const partialLoadRate = 2;
+        let baseRate = fullLoadRate;
+
+        // Overweight cost additions
+        let overweightCost = 0;
+        if (weight >= 48000 && weight <= 59999) {
+            overweightCost = 1.5;
+        } else if (weight >= 60000 && weight <= 79999) {
+            overweightCost = 2.5;
+        } else if (weight >= 80000 && weight <= 89999) {
+            overweightCost = 3;
+        } else if (weight >= 90000 && weight <= 105000) {
+            overweightCost = 5;
+        } else if (weight > 105001) {
+            overweightCost = 8;
         }
 
-        setRate(rate);
+        // Dimension-based full load check
+        const isOverWidth = width > 96;
+        const isOverHeight = height > 10.5;
+        const isOverLength = length >= 40;
+        const requiresFullLoad = isOverWidth || isOverHeight || isOverLength || weight >= 35000;
 
-        const calculatedRate = rate * distance;
-        console.log(`Estimated shipping rate: $${rate.toFixed(2)} * ${distance.toFixed(2)} miles = $${calculatedRate.toFixed(2)}`);
-        alert(`Estimated shipping rate: $${calculatedRate.toFixed(2)}`);
-        return calculatedRate;
-    }
+        if (requiresFullLoad) {
+            baseRate = fullLoadRate;
+        } else if (length >= 15 && length < 30 && weight < 20000 && !isOverWidth && !isOverHeight) {
+            baseRate = partialLoadRate;
+        }
+
+        // Total rate per mile
+        const totalRate = baseRate + overweightCost;
+
+        // Calculate pilot car costs if applicable
+        let pilotCarCost = 0;
+        if (isOverWidth || isOverHeight) {
+            const pilotCarsNeeded = isOverWidth && isOverHeight ? 2 : 1;
+            if (pilotCarsNeeded === 1) {
+                pilotCarCost = 500 + 1.5 * distance;
+            } else if (pilotCarsNeeded === 2) {
+                pilotCarCost = 1000 + 3 * distance;
+            }
+        }
+
+        // Permit costs
+        const permitsPerState = isOverWidth && isOverHeight ? 200 : (isOverWidth || isOverHeight ? 125 : 0);
+        const numStates = 3; // Example: Modify with actual state count from route
+        const permitCost = permitsPerState * numStates;
+
+        // Calculate total cost
+        const baseCost = totalRate * distance;
+        const totalCost = baseCost + pilotCarCost + permitCost;
+        const serviceFee = totalCost * 0.15; // 15% service fee
+        const finalCost = totalCost + serviceFee;
+
+        console.log(`Base Rate: $${baseRate} per mile`);
+        console.log(`Overweight Cost: $${overweightCost} per mile`);
+        console.log(`Pilot Car Cost: $${pilotCarCost.toFixed(2)}`);
+        console.log(`Permit Cost: $${permitCost.toFixed(2)}`);
+        console.log(`Total Cost (before service fee): $${totalCost.toFixed(2)}`);
+        console.log(`Final Cost (after service fee): $${finalCost.toFixed(2)}`);
+
+        alert(`Final Shipping Estimate: $${finalCost.toFixed(2)} (includes service fee)`);
+
+        return finalCost;
+    };
 
     const validateEmail = (email: string) => {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

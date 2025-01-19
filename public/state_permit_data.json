@@ -1,0 +1,345 @@
+{
+    "Alabama Size and Weights": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Arizona Size and Weights": {
+        "Width": "8'6\"",
+        "Height": "14\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Arkansas Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "California Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Colorado Size and Weights": {
+        "Width": "8'6\"",
+        "Height": "14'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "36,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Connecticut Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "18,000 lbs - if axles are less than 6' apart22,400 lbs - if axes spaced 6' or greater",
+        "Tandem Axle": "",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Delaware Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "District of Columbia Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Florida Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "22,000 lbs",
+        "Tandem Axle": "44,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Georgia Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,340 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Idaho Sizes & Weight Limit": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,340 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Illinois Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Indiana Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Iowa Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Kansas Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Kentucky Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Louisiana Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Maine Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Maryland Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Massachusetts Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "22,400 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Michigan Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "",
+        "Tandem Axle": "",
+        "Gross Vehicle Weight": ""
+    },
+    "Minnesota Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Mississippi Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Missouri Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Montana Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Nebraska Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Nevada Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "129,000 lbs"
+    },
+    "New Hampshire Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "New Jersey Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "22,400 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "New Mexico Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "21,600 lbs",
+        "Tandem Axle": "34,320 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "New York Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "22,400 lbs",
+        "Tandem Axle": "36,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "North Carolina Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "38,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "North Dakota Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Ohio Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Oklahoma Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Oregon Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Pennsylvania Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Rhode Island Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "22,400 lbs",
+        "Tandem Axle": "36,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "South Carolina Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "35,200 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "South Dakota Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Tennessee Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Texas Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Utah Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Vermont Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Virginia Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Washington Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "105,500 lbs"
+    },
+    "West Virginia Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Wisconsin Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "13'6\"",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "34,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    },
+    "Wyoming Size and Weight Limits": {
+        "Width": "8'6\"",
+        "Height": "14'",
+        "Single Axle": "20,000 lbs",
+        "Tandem Axle": "36,000 lbs",
+        "Gross Vehicle Weight": "80,000 lbs"
+    }
+}

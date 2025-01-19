@@ -1,0 +1,15 @@
+{
+    "Lowboy": {
+      "Standard": "12-14 inches",
+      "Extended": "14-16 inches",
+      "Custom": "8 inches"
+    },
+    "RGN": {
+      "Standard": "18-24 inches",
+      "Extended": "28-30 inches"
+    },
+    "Stepdeck": {
+      "Standard": "36-42 inches",
+      "Double-drop": "24-30 inches"
+    }
+  }

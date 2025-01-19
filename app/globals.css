@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    @apply bg-stone-800 bg-cover p-5 rounded-md w-full h-full max-h-max max-w-max;
+    width: 75rem;
+    height: 75rem;
+    overflow: auto; /* Add overflow to handle content that exceeds the container size */
+}
+
+input {
+    @apply bg-white text-gray-950 placeholder:text-gray-800;
+}
